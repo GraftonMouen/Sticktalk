@@ -1,0 +1,96 @@
+/* Reset styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+/* Basic styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('images/background.jpg') no-repeat center center fixed; /* Set the background image */
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+  display: flex;
+  min-height: 100vh; /* Ensure the body stretches to at least the height of the viewport */
+  color: #fff;
+  margin-left: 200px; /* Add space for the fixed nav */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative; /* Position the container relative to the body */
+}
+
+nav {
+  background-color: rgba(85, 107, 47, 0.9); /* Olive green for the menu bar with transparency */
+  width: 200px;
+  position: fixed; /* Fix the menu bar to the left side */
+  top: 0;
+  left: 0;
+  height: 100%; /* Make it stretch from top to bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #8FBC8F; /* Light green on hover */
+}
+
+.content {
+  flex: 1; /* Fill remaining space */
+  padding: 20px;
+}
+
+header {
+  background-color: rgba(143, 188, 143, 0.9); /* Light green header with transparency */
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hero {
+  background-color: rgba(79, 121, 66, 0.9); /* Dark green hero section with transparency */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+footer {
+  background-color: rgba(79, 121, 66, 0.9); /* Dark green footer with transparency */
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Push footer to bottom */
+}
